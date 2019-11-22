@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-  dialurl := "wss://c2a13350.ngrok.io/spin"
+  dialurl := "wss://c5c409b9.ngrok.io/spin"
   socket, err := comms.EstablishSocket(dialurl)
   if err != nil {return}
   var resp spinresp.Response
