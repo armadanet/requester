@@ -8,17 +8,12 @@ import (
 )
 
 func main() {
-  dialurl := "wss://412db34f.ngrok.io/spin"
+  dialurl := "wss://4fbf1747.ngrok.io/spin"
   socket, err := comms.EstablishSocket(dialurl)
   if err != nil {return}
-  comms.Reader(func(data interface{}, ok bool) {
-    log.Println("something")
-    if !ok {return}
-    log.Println(data)
-    config, ok := data.(spinresp.Response)
-    if !ok {return}
-    log.Println(config)
-  }, socket.Reader())
+  var resp spinresp.Response
+  socket.Start(resp)
+  reader := socket.Reader()
   writer := socket.Writer()
   container := dockercntrl.Config{
     Image: "busybox",
@@ -32,5 +27,13 @@ func main() {
     },
   }
   writer <- container
-  for{select{}}
+  for {
+    select {
+    case data, ok := <- reader:
+      if !ok {break}
+      response, ok := data.(*spinresp.Response)
+      if !ok {break}
+      log.Println(response)
+    }
+  }
 }

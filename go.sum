@@ -33,6 +33,10 @@ github.com/open-nebula/captain v0.0.0-20190919154739-0101b09f622b h1:eqKj7Wx3mDd
 github.com/open-nebula/captain v0.0.0-20190919154739-0101b09f622b/go.mod h1:kNrm85Mld/xV8xhtMGnfGYw0kcJ2k1aIidQ2Y06UkLQ=
 github.com/open-nebula/comms v0.0.0-20191108124959-31bee49f6864 h1:xziG/hwENrKPo5XkdNt7JJMuFczLzVM3gh7yBsC50h8=
 github.com/open-nebula/comms v0.0.0-20191108124959-31bee49f6864/go.mod h1:vk0k4jnpAxh5CilRTjVEcBA3F0MGonur20e4s1NhtKg=
+github.com/open-nebula/comms v0.0.0-20191121161850-e22c9b5ef0b3 h1:WOiiDKK/TR06jtzAYrV6NYQX5Or1fGT1ZDr8Rit0uag=
+github.com/open-nebula/comms v0.0.0-20191121161850-e22c9b5ef0b3/go.mod h1:vk0k4jnpAxh5CilRTjVEcBA3F0MGonur20e4s1NhtKg=
+github.com/open-nebula/comms v0.0.0-20191121225953-aa161e63e5de h1:VIq9YRfH0qrpQqlShvcoICvKY4sesbVWHaZmqpJJ2n0=
+github.com/open-nebula/comms v0.0.0-20191121225953-aa161e63e5de/go.mod h1:vk0k4jnpAxh5CilRTjVEcBA3F0MGonur20e4s1NhtKg=
 github.com/open-nebula/spinner v0.0.0-20190913121111-46c49f799f21 h1:XHfOClDNP4ONt6dnAUzD3D/meTQ5Z6KTmUAT7WcJP/w=
 github.com/open-nebula/spinner v0.0.0-20190913121111-46c49f799f21/go.mod h1:3cYLVFdHNBJqKYxEet4OEHaCk323Qf0s8TjobTJ19jo=
 github.com/opencontainers/go-digest v1.0.0-rc1 h1:WzifXhOVOEOuFYOJAW6aQqW0TooG2iki3E3Ii+WN7gQ=
