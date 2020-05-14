@@ -1,25 +1,25 @@
 package main
 
 import (
-  "github.com/open-nebula/captain/dockercntrl"
-  "github.com/open-nebula/spinner/spinresp"
-  "github.com/open-nebula/comms"
+  "github.com/armadanet/captain/dockercntrl" // @cargo-connect
+  "github.com/armadanet/spinner/spinresp"
+  "github.com/armadanet/comms"
   "github.com/google/uuid"
   "log"
 )
 
 func main() {
-  dialurl := "wss://c5c409b9.ngrok.io/spin"
+  dialurl := "wss://69de8bbe.ngrok.io/spin"
   socket, err := comms.EstablishSocket(dialurl)
   if err != nil {return}
   var resp spinresp.Response
   socket.Start(resp)
   reader := socket.Reader()
   writer := socket.Writer()
-  for i := 1; i <= 5; i++ {
+  for i := 1; i <= 1; i++ {
     container := dockercntrl.Config{
-      Image: "busybox",
-      Cmd: []string{"echo", "hello"},
+      Image: "docker.io/codyperakslis/armada-cargo-test",
+      Cmd: []string{"./main"},
       Tty: true,
       Name: uuid.New().String(),
       Env: []string{},
@@ -27,6 +27,7 @@ func main() {
       Limits: &dockercntrl.Limits{
         CPUShares: 2,
       },
+      Storage: true,
     }
     writer <- container
   }
