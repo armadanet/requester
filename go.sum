@@ -5,8 +5,12 @@ github.com/Microsoft/go-winio v0.4.14/go.mod h1:qXqCSQ3Xa7+6tgxaGTIe4Kpcdsi+P8jB
 github.com/armadanet/captain v0.0.0-20200417105612-b16d83149ff8 h1:azSVYVtLlFiBvSwr9iFO8KAPLezpNRJB2xF+6JzJvAg=
 github.com/armadanet/captain/dockercntrl v0.0.0-20200417105612-b16d83149ff8 h1:FfWHOQmpG3do6yF06pUp012A1+eiCySBLt+mN/iG1i4=
 github.com/armadanet/captain/dockercntrl v0.0.0-20200417105612-b16d83149ff8/go.mod h1:6zVbYBcKeZW6Dh04hbPXA7jP/94fgLLmxq4yDIFLS2c=
+github.com/armadanet/captain/dockercntrl v0.0.0-20200528144743-f3807fb05a97 h1:Sy/u4q6PifZ8j8VD+1yHTWNGSL5Udz+CtxXhR39XcTk=
+github.com/armadanet/captain/dockercntrl v0.0.0-20200528144743-f3807fb05a97/go.mod h1:6zVbYBcKeZW6Dh04hbPXA7jP/94fgLLmxq4yDIFLS2c=
 github.com/armadanet/comms v0.0.0-20200221145451-dcf27e32ffc8 h1:qunYG4a74sNw8g4y64FunYSW6L0/FVPhxs4WXfAstkU=
 github.com/armadanet/comms v0.0.0-20200221145451-dcf27e32ffc8/go.mod h1:R9YoQLBmYniidW8eTXaGtP+WuR82JWB/bXVnYgnlTcQ=
+github.com/armadanet/comms v0.0.0-20200528090635-3089ce4375d7 h1:yUe/hTsu0gOY86OT1M6pkLVciE6CGDYfKPR2A8j2t/g=
+github.com/armadanet/comms v0.0.0-20200528090635-3089ce4375d7/go.mod h1:R9YoQLBmYniidW8eTXaGtP+WuR82JWB/bXVnYgnlTcQ=
 github.com/armadanet/spinner v0.0.0-20200221145511-5e0b9775b00d h1:JtURIK8LigHSCxqb8SJDgx/UaKZb/LkxLhOkIx6qqyw=
 github.com/armadanet/spinner/spinresp v0.0.0-20200221145511-5e0b9775b00d h1:o4z8FDM4irl90+VyCISFnpPpqDg9907DQDL05gTlSII=
 github.com/armadanet/spinner/spinresp v0.0.0-20200221145511-5e0b9775b00d/go.mod h1:BeuXwdlbixIsg5TueyNcQQsCKufldUamycJL+nZAC8I=
