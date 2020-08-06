@@ -1,6 +1,8 @@
-module github.com/open-nebula/requester
+module github.com/armadanet/requester
 
-go 1.12
+go 1.14
+
+replace github.com/armadanet/spinner => ../spinner
 
 require (
 	github.com/armadanet/captain/dockercntrl v0.0.0-20200528144743-f3807fb05a97 // indirect
