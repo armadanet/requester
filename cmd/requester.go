@@ -7,5 +7,5 @@ import (
 
 func main() {
 	err := requester.Run("spinner:5912")
-	if err != nil {log.Fatalln(err)}
+	if err != nil {log.Println(err)}
 }
