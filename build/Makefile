@@ -7,8 +7,8 @@ NETWORK := spinner-local-network
 build:
 	cd ../.. && docker build -t $(IMAGE_NAME) -f requester/build/Dockerfile .
 
-run: build
-	docker run -it  -v /var/run/docker.sock:/var/run/docker.sock --net $(NETWORK) $(IMAGE_NAME)
+run:
+	docker run -it  -v /var/run/docker.sock:/var/run/docker.sock --net $(NETWORK) --name $(IMAGE_NAME) $(IMAGE_NAME)
 
 clean:
 	docker rm $(CONTAINER_NAME)
