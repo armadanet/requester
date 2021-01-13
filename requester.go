@@ -41,6 +41,7 @@ func  Run(dialurl string) error {
     Required: true,
   }
   taskSpec.Ports["8080"] = ""
+  taskSpec.DataSources = append(taskSpec.DataSources, &spincomm.Location{Lat: 40.0196, Lon: -90.2402})
 
   request := &spincomm.TaskRequest{
     AppId: &spincomm.UUID{Value: "test_request"},
