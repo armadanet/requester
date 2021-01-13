@@ -50,6 +50,7 @@ func  Run(dialurl string) error {
     Limits: &spincomm.TaskLimits{CpuShares: 2},
     Taskspec: &taskSpec,
     Port: 8080,
+    TaskId: &spincomm.UUID{Value: "test_request_1"},
   }
   stream, err := client.Request(ctx, request)
   if err != nil {return err}
