@@ -29,6 +29,7 @@ func  Run(dialurl string) error {
       Size: 1,
       NReplica: 3,
     },
+    DataSources: &spincomm.Location{Lat: 40.0196, Lon: -90.2402},
   }
   taskSpec.ResourceMap["CPU"] = &spincomm.ResourceRequirement{
     Weight: 0.5,
@@ -41,7 +42,6 @@ func  Run(dialurl string) error {
     Required: true,
   }
   taskSpec.Ports["8080"] = ""
-  taskSpec.DataSources = append(taskSpec.DataSources, &spincomm.Location{Lat: 40.0196, Lon: -90.2402})
 
   request := &spincomm.TaskRequest{
     AppId: &spincomm.UUID{Value: "test_request"},
